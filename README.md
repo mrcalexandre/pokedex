@@ -4,7 +4,7 @@ Pokedex in Angular - **Alexandre MOURIEC - Romain GEFFROY**
 
 Project built during a college class to learn how to use Angular.
 
-![](../pokedex/src/assets/images/pokedex.png)
+![](./src/assets/images/pokedex.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
 
