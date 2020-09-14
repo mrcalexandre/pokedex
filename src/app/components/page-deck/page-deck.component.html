@@ -1,0 +1,29 @@
+<div class="row col-12">
+  <div class="offset-md-4 mt-4" *ngIf="emptyDeck == true; else elseBlock">
+    <img src="../../../assets/images/empty.svg" width="450" height="450" />
+  </div>
+  <h5 class="text-white text-center offset-md-3">C'est un peu vide non ? Visite la boutique pour capturer des pokémons <img src="../../../assets/images/pokeball.gif" width="30" height="30" /></h5>  
+</div>
+<ng-template #elseBlock>
+  <div class="search  col-md-12">
+    <div class="input-group input-group-md mb-3 mt-4">
+      <div class="input-group-prepend ">
+        <label class="input-group-text">Minimum Attack</label>
+      </div>
+      <input
+        [(ngModel)]="minAttack"
+        type="number"
+        name="minAttack"
+        class="form-control"
+      />
+    </div>
+  </div>
+  <div class="row col-12 mb-4">
+    <div
+      *ngFor="let pokemon of deck | filter: minAttack; let i = index"
+      class="col-lg-3 col-md-4 col-sm-6 col-12 "
+    >
+      <app-pokemon [data]="pokemon" [id]="i"></app-pokemon>
+    </div>
+  </div>
+</ng-template>

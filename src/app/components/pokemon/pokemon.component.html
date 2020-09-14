@@ -1,0 +1,37 @@
+<figure class="card card--{{ monPokemon.type }}">
+  <div class="card__image-container">
+    <img
+      class="card-img-top imagePokemon card__image"
+      data-src="{{ monPokemon.image }}"
+      alt="Image {{ monPokemon.name }}"
+    />
+  </div>
+
+  <figcaption class="card__caption mt-4">
+    <h1 class="card__name">{{ monPokemon.name }}</h1>
+
+    <h4 class="card__type mb-1">
+      {{ monPokemon.type }}
+    </h4>
+    <div class="card__abilities">
+      <h4 class="card__ability">
+        <span class="card__label">Attack</span>
+        {{ monPokemon.stats.attack }}
+      </h4>
+      <h4 class="card__ability">
+        <span class="card__label">HP</span>
+        {{ monPokemon.stats.hp }}
+      </h4>
+    </div>
+    <div class="card__abilities">
+      <h4 class="card__ability">
+        <span class="card__label">Speed</span>
+        {{ monPokemon.stats.speed }}
+      </h4>
+      <h4 class="card__ability">
+        <span class="card__label">Defense</span>
+        {{ monPokemon.stats.defense }}
+      </h4>
+    </div>
+  </figcaption>
+</figure>

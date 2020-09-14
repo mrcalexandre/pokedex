@@ -1,0 +1,22 @@
+<div class="form-group mb-3" [ngClass]="{ focused: focus === true }">
+  <label>Nom du dresseur</label>
+  <div class="input-group input-group-alternative">
+    <input
+      [(ngModel)]="pseudo"
+      class="form-control"
+      type="name"
+      placeholder="Nom"
+      type="text"
+      (focus)="focus = true"
+      (blur)="focus = false"
+    />
+  </div>
+</div>
+<div>
+  <button
+    class="btn btn-primary btn-lg btn-block my-4"
+    (click)="getTokenUser(pseudo)"
+  >
+    Se Connecter
+  </button>
+</div>

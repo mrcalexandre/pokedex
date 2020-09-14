@@ -1,0 +1,19 @@
+nav {
+  background-color: #3d7dca;
+  li a,
+  p {
+    color: white !important;
+    font-size: 22px;
+  }
+  a:hover {
+    border: 1px solid white !important;
+    border-radius: 5px;
+  }
+  .navbar-brand:hover {
+    border: 0px solid white !important;
+  }
+  border-bottom: 2px solid white;
+  .btn-danger {
+    font-weight: bold;
+  }
+}

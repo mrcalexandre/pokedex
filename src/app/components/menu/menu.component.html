@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand">
+  <div class="collapse navbar-collapse row">
+    <a class="navbar-brand col-4" href="#"
+      ><img src="../../../assets/Pokemon_logo.svg" height="50"
+    /></a>
+    <div class="row col-lg-8 col-md-8 col-12">
+      <ul class="navbar-nav d-flex row col-9 mt-2">
+        <li class="nav-item col">
+          <a class="nav-link pr-0" routerLink="/deck">Deck</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link pr-0" routerLink="/boutique">Boutique</a>
+        </li>
+        <li class="nav-item col">
+          <p class="nav-link pr-0">Solde : {{ userCoin.currentCoin }} PK</p>
+        </li>
+      </ul>
+      <button class="btn btn-danger my-2 col-3" (click)="delete()">
+        Delete and logout
+      </button>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

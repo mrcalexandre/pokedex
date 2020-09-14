@@ -1,0 +1,17 @@
+<div class="d-flex justify-self-center mt-4 ml-4 mb-4">
+  <img
+    src="../../../assets/images/booster.jpg"
+    class="imageBooster"
+    alt="Booster Pokemon"
+    (click)="showPokemon(10)"
+  />
+</div>
+<div class="row col-12 ml-2">
+  <div
+    *ngFor="let pokemon of listePokemon; let i = index"
+    class="col-lg-3 col-md-4 col-sm-6 col-12"
+  >
+    <button class="mr-2" (click)="delete(i)">X</button>
+    <app-pokemon [data]="pokemon" [id]="i" (click)="addDeck(i)"></app-pokemon>
+  </div>
+</div>
